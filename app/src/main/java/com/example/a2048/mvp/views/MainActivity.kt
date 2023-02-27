@@ -59,19 +59,19 @@ class MainActivity : AppCompatActivity() {
         myTouchListener.setDetectSideListener {
             when (it) {
                 SideEnum.RIGHT -> {
-                    repository.actionToRight()
+                    repository.moveRight()
                     describeMatrix()
                 }
                 SideEnum.LEFT -> {
-                    repository.actionToLeft()
+                    repository.moveLeft()
                     describeMatrix()
                 }
                 SideEnum.UP -> {
-                    repository.actionToUP()
+                    repository.moveUp()
                     describeMatrix()
                 }
                 SideEnum.DOWN -> {
-                    repository.actionToDown()
+                    repository.moveDown()
                     describeMatrix()
                 }
             }
@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
             repository.replay()
             describeMatrix()
             score.text = "0"
-            repository.setScore(0)
+//            repository.setScore(0)
         }
     }
 

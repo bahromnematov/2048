@@ -15,5 +15,6 @@ class InfoScreen : AppCompatActivity() {
         back.setOnClickListener{
             finish()
         }
+
     }
 }
